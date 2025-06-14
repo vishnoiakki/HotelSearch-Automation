@@ -65,6 +65,8 @@ This project contains Maestro automation flows for the Hotel Booking mobile app.
 
 ## Project Folder Structure
 
+## Project Folder Structure
+
 ```plaintext
 HotelSearch-Automation/
 ├── artifacts/
@@ -86,9 +88,13 @@ HotelSearch-Automation/
 ├── inputs/
 ├── tests/
 │   ├── Completefavorites.yaml
-│   ├── favori
-
-
+│   ├── favorites.yaml
+│   ├── footernavigation.yaml
+│   ├── Headertitle.yaml
+│   └── hotel-search.yaml
+├── image.png
+└── README.md
+```
 ## Screenshots
 
 ![alt text](artifacts/screenshots/image.png)
