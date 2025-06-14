@@ -1,22 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites>
-  <testsuite name="Test Suite" device="ZD222Q6L7L" tests="5" failures="4" time="105">
-    <testcase id="Completefavorites" name="Completefavorites" classname="Completefavorites" time="22" status="ERROR">
-      <failure>Element not found: Text matching regex: Hotels
-Tab 2 of 4</failure>
-    </testcase>
-    <testcase id="favorites" name="favorites" classname="favorites" time="20" status="ERROR">
-      <failure>Element not found: Text matching regex: Hotels
-Tab 2 of 4</failure>
-    </testcase>
-    <testcase id="footernavigation" name="footernavigation" classname="footernavigation" time="20" status="ERROR">
-      <failure>Element not found: Text matching regex: Hotels
-Tab 2 of 4</failure>
-    </testcase>
-    <testcase id="Headertitle" name="Headertitle" classname="Headertitle" time="20" status="ERROR">
-      <failure>Element not found: Text matching regex: Favorites
-Tab 3 of 4</failure>
-    </testcase>
-    <testcase id="hotel-search" name="hotel-search" classname="hotel-search" time="23" status="SUCCESS"/>
+  <testsuite name="Test Suite" device="ZD222Q6L7L" tests="5" failures="0" time="118">
+    <testcase id="Completefavorites" name="Completefavorites" classname="Completefavorites" time="49" status="SUCCESS"/>
+    <testcase id="favorites" name="favorites" classname="favorites" time="19" status="SUCCESS"/>
+    <testcase id="footernavigation" name="footernavigation" classname="footernavigation" time="18" status="SUCCESS"/>
+    <testcase id="Headertitle" name="Headertitle" classname="Headertitle" time="16" status="SUCCESS"/>
+    <testcase id="hotel-search" name="hotel-search" classname="hotel-search" time="16" status="SUCCESS"/>
   </testsuite>
 </testsuites>
