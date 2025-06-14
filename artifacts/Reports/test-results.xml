@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites>
-  <testsuite name="Test Suite" device="ZD222Q6L7L" tests="5" failures="0" time="128">
-    <testcase id="Completefavorites" name="Completefavorites" classname="Completefavorites" time="54" status="SUCCESS"/>
-    <testcase id="favorites" name="favorites" classname="favorites" time="21" status="SUCCESS"/>
-    <testcase id="footernavigation" name="footernavigation" classname="footernavigation" time="19" status="SUCCESS"/>
+  <testsuite name="Test Suite" device="ZD222Q6L7L" tests="5" failures="0" time="124">
+    <testcase id="Completefavorites" name="Completefavorites" classname="Completefavorites" time="50" status="SUCCESS"/>
+    <testcase id="favorites" name="favorites" classname="favorites" time="20" status="SUCCESS"/>
+    <testcase id="footernavigation" name="footernavigation" classname="footernavigation" time="21" status="SUCCESS"/>
     <testcase id="Headertitle" name="Headertitle" classname="Headertitle" time="16" status="SUCCESS"/>
-    <testcase id="hotel-search" name="hotel-search" classname="hotel-search" time="18" status="SUCCESS"/>
+    <testcase id="hotel-search" name="hotel-search" classname="hotel-search" time="17" status="SUCCESS"/>
   </testsuite>
 </testsuites>
