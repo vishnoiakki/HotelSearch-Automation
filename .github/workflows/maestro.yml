@@ -20,13 +20,15 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Install Maestro
-      run: |
-        curl -Ls "https://get.maestro.mobile.dev" | bash
-        echo "$HOME/.maestro/bin" >> $GITHUB_PATH
-
-    - name: Verify Maestro installation
-      run: maestro --version
-
-    - name: Run Maestro flows
-      run: maestro test flows/
+    - name: Set up Android SDK
+      uses: reactivecircus/android-emulator-runner@v2
+      with:
+        api-level: 30
+        target: default
+        arch: x86_64
+        profile: pixel_4
+        script: |
+          curl -Ls "https://get.maestro.mobile.dev" | bash
+          echo "$HOME/.maestro/bin" >> $GITHUB_PATH
+          maestro --version
+          maestro test flows/
