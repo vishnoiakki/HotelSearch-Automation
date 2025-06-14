@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout current repo (includes APK and flows)
       uses: actions/checkout@v3
 
-    - name: Set up Java (required for Maestro)
+    - name: Set up Java
       uses: actions/setup-java@v3
       with:
         distribution: 'temurin'
@@ -28,14 +28,6 @@ jobs:
         curl -Ls "https://get.maestro.mobile.dev" | bash
         echo "$HOME/.maestro/bin" >> $GITHUB_PATH
 
-    - name: Set up Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: '3.13.0' # or your current version
-
-    - name: Install Flutter dependencies
-      run: flutter pub get
-
     - name: Set up Android Emulator & Run Tests
       uses: reactivecircus/android-emulator-runner@v2
       with:
@@ -45,14 +37,7 @@ jobs:
         profile: pixel_4
         script: |
           mkdir -p artifacts/Reports
-          adb devices
-
-          # Build & install app
-          flutter build apk --debug
-          adb install build/app/outputs/flutter-apk/app-debug.apk
-
-          # Run Maestro tests
-          maestro --version
+          adb install apk/app-debug.apk
           maestro test flows/ --format junit --output artifacts/Reports/test-results.xml
 
     - name: Upload Test Reports
