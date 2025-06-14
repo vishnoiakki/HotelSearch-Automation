@@ -68,4 +68,4 @@ This project contains Maestro automation flows for the Hotel Booking mobile app.
 
 ## Screenshots
 
-![alt text](HotelSearch-Automation/artifacts/screenshots/image.png)
+![alt text](artifacts/screenshots/image.png)
