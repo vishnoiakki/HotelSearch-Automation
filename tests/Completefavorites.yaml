@@ -1,0 +1,32 @@
+appId: com.example.hotel_booking
+---
+- runFlow: "../flows/Fav.yaml"  # Running the flow to launch the app and navigate to Favorites
+- tapOn:
+    point: 91%,19%
+- tapOn:
+    point: 91%,47%
+- tapOn:
+    point: 91%,58%
+- tapOn:
+    point: 91%,68%
+- swipe:
+    direction: UP
+- swipe:
+    direction: UP
+- swipe:
+    direction: down
+- tapOn: "Favorites\nTab 3 of 4"  #Tapping on Favorites Tab
+- takeScreenshot: "../artifacts/screenshots/FavoritesHotels" # Taking screenshot of Favorites Hotels Tab
+- tapOn:
+    point: 91%,15%
+- tapOn:
+    point: 91%,24
+- takeScreenshot: "../artifacts/screenshots/FavoritesHotels" # Taking screenshot of Favorites Hotels Tab
+- tapOn: "Hotels\nTab 2 of 4"    #Tapping on Hotels Tab
+- takeScreenshot: "../artifacts/screenshots/BackToHotelTab" # Taking screenshot of Hotels Tab
+- swipe:
+    direction: UP
+- swipe:
+    direction: UP
+- swipe:
+    direction: down

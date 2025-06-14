@@ -1,0 +1,5 @@
+
+appId: com.example.hotel_booking
+---
+- launchApp 
+- tapOn: "Hotels\nTab 2 of 4"    #Tapping on Hotels Tab

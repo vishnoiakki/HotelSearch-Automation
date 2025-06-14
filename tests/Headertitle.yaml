@@ -1,0 +1,18 @@
+appId: com.example.hotel_booking
+---
+- launchApp 
+#- tapOn: "Hotels\nTab 2 of 4"    #Tapping on Hotels Tab
+#- waitForAnimationToEnd
+#- takeScreenshot: "../artifacts/screenshots/HotelTab" # Taking screenshot of Hotels Tab
+- tapOn: "Favorites\nTab 3 of 4"  #Tapping on Favorites Tab
+- assertVisible: "Your Favorite Hotels" # Asserting that the text "Your Favorites Hotels" is visible
+#- waitForAnimationToEnd
+- takeScreenshot: "../artifacts/screenshots/FavoritesTab" # Taking screenshot of Favorites Tab
+- tapOn: "Overview\nTab 1 of 4"   #Tapping on Overview Tab
+- assertVisible: "Hotel Booking" # Asserting that the text "Overview" is visible
+#- waitForAnimationToEnd
+- takeScreenshot: "../artifacts/screenshots/OverviewTab" # Taking screenshot of Overview Tab
+- tapOn: "Account\nTab 4 of 4"   #Tapping on Account Tab
+- assertVisible: "Your Account" # Asserting that the text "Your Account" is visible
+#- waitForAnimationToEnd # Waiting for animation to end
+- takeScreenshot: "../artifacts/screenshots/AccountTab" # Taking screenshot of Account Tab

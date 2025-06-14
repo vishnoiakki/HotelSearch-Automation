@@ -1,0 +1,7 @@
+appId: com.example.hotel_booking
+---
+- runFlow: "../flows/applaunch.yaml"
+- tapOn: "Search hotels"        # Tap on search input field (replace with actual text if different)
+
+- inputText: "Delhi"  # Input text for search (replace with actual search term)
+- takeScreenshot: "../artifacts/screenshots/Delhi-search"

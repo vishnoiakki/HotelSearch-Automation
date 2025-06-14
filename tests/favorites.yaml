@@ -1,0 +1,12 @@
+appId: com.example.hotel_booking
+---
+- runFlow: "../flows/applaunch.yaml" # Running the flow to launch the app and navigate to Hotels
+- tapOn: "Search hotels"        # Tap on search input field (replace with actual text if different)
+
+- inputText: "Delhi"  # Input text for search (replace with actual search term)
+- takeScreenshot: "../artifacts/screenshots/Delhi-search" # Taking screenshot of Delhi search results
+- swipe:
+    direction: UP
+- tapOn:
+    point: "91%,66%"
+- takeScreenshot: "../artifacts/screenshots/Delhi-zaza-favorite" # Taking screenshot of Delhi Zaza favorite hotel
