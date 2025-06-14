@@ -20,7 +20,12 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Set up Android SDK
+    - name: Install Maestro
+      run: |
+        curl -Ls "https://get.maestro.mobile.dev" | bash
+        echo "$HOME/.maestro/bin" >> $GITHUB_PATH
+
+    - name: Set up Android Emulator & Run Tests
       uses: reactivecircus/android-emulator-runner@v2
       with:
         api-level: 30
@@ -28,7 +33,13 @@ jobs:
         arch: x86_64
         profile: pixel_4
         script: |
-          curl -Ls "https://get.maestro.mobile.dev" | bash
-          echo "$HOME/.maestro/bin" >> $GITHUB_PATH
+          mkdir -p artifacts/Reports
+          adb devices
           maestro --version
-          maestro test flows/
+          maestro test flows/ --format junit --output artifacts/Reports/test-results.xml
+
+    - name: Upload Test Reports
+      uses: actions/upload-artifact@v3
+      with:
+        name: maestro-test-results
+        path: artifacts/Reports/test-results.xml
