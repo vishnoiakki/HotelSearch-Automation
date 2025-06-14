@@ -64,8 +64,8 @@ This project contains Maestro automation flows for the Hotel Booking mobile app.
 
 ## Folder structure 
 
-``` HotelSearch-Automation/ ├── artifacts/ │ ├── Reports/ │ │ ├── report.html │ │ └── test-results.xml │ └── screenshots/ │ ├── AccountTab.png │ ├── BackToHotelTab.png │ ├── Delhi-search.png │ ├── Delhi-zaza-favorite.png │ ├── FavoritesHotels.png │ ├── FavoritesTab.png │ ├── NewYork.png │ └── OverviewTab.png ├── flows/ │ ├── applaunch.yaml │ └── Fav.yaml ├── inputs/ ├── tests/ │ ├── Completefavorites.yaml │ ├── favorites.yaml │ ├── footernavigation.yaml │ ├── Headertitle.yaml │ └── hotel-search.yaml ├── image.png └── README.md ```
+`HotelSearch-Automation/ ├── artifacts/ │ ├── Reports/ │ │ ├── report.html │ │ └── test-results.xml │ └── screenshots/ │ ├── AccountTab.png │ ├── BackToHotelTab.png │ ├── Delhi-search.png │ ├── Delhi-zaza-favorite.png │ ├── FavoritesHotels.png │ ├── FavoritesTab.png │ ├── NewYork.png │ └── OverviewTab.png ├── flows/ │ ├── applaunch.yaml │ └── Fav.yaml ├── inputs/ ├── tests/ │ ├── Completefavorites.yaml │ ├── favorites.yaml │ ├── footernavigation.yaml │ ├── Headertitle.yaml │ └── hotel-search.yaml ├── image.png └── README.md `
 
 ## Screenshots
 
-![alt text](HotelSearch-Automation\artifacts\screenshots\image.png)
+![alt text](HotelSearch-Automation/artifacts/screenshots/image.png)
