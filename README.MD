@@ -53,6 +53,9 @@ This project contains Maestro automation flows for the Hotel Booking mobile app.
 ### To execute all tests in the folder (from root folder)
 `maestro test tests/ --format junit --output artifacts/Reports/test-results.xml`
 
+### To execute on Adb device
+`maestro --device emulator-5554 test tests/ --format junit --output artifacts/Reports/test-results.xml`
+
 ### To convert XML report into HTML report
 `junit-viewer --results=../artifacts/Reports/test-results.xml --save=../artifacts/Reports/report.html`
 
