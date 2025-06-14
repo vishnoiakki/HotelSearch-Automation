@@ -1,7 +1,13 @@
 name: Maestro CI
 
 on:
-  workflow_dispatch:  # 🚀 Manual trigger only
+  workflow_dispatch:  # 🚀 Manual trigger only  
+
+#on:
+ # push:
+  #  branches: [ main ]
+  #pull_request:
+  #  branches: [ main ]
 
 jobs:
   maestro-tests:
